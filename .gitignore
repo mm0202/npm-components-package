@@ -2,6 +2,11 @@
 .bk
 public
 
+cypress/integration/examples
+cypress/fixtures/example.json
+cypress/videos/
+cypress.json
+
 # Logs
 logs
 *.log

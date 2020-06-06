@@ -40,7 +40,7 @@ jobs:
       - name: Commit files
         run: |
           echo ${{ github.ref }}
-          git add public
+          git add storybook-static
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git commit -m "ci: Automated build push" | exit 0

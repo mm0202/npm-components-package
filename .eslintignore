@@ -4,3 +4,4 @@ public/
 coverage/
 cypress/integration/examples/
 storybook-static/
+dist/

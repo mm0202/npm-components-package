@@ -3,3 +3,4 @@ public/
 .github/
 coverage/
 storybook-static/
+dist/

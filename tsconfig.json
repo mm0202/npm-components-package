@@ -1,25 +1,48 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "ES5",
     "lib": [
       "dom",
       "dom.iterable",
-      "esnext"
+      "esnext",
+      "ES2015",
+      "ES7"
     ],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "module": "esnext",
+    "module": "commonjs",
     "moduleResolution": "node",
+    "jsx": "react",
+    "newLine": "lf",
+    "outDir": "dist",
+    "types": [
+      "jest"
+    ],
+    "strict": true,
+    "allowJs": true,
     "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react"
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "pretty": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true
   },
   "include": [
     "src"
+  ],
+  "exclude": [
+    "jest.config.js",
+    "jest.setup.ts",
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    "**/*.test.js",
+    "**/*.stories.ts",
+    "**/*.stories.tsx",
+    "**/*.stories.js",
+    "**/*.spec.ts",
+    "**/*.spec.tsx",
+    "**/*.spec.js"
   ]
 }

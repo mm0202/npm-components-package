@@ -34,6 +34,9 @@ jobs:
       - run: yarn test
       - run: yarn build-storybook
 
+      - name: checkout branch for publish
+        run: git checkout -b production-public
+
       - name: Commit files
         run: |
           echo ${{ github.ref }}

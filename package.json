@@ -14,8 +14,8 @@
     "stylelint:fix": "stylelint --fix ./**/*.{css,scss,ts,tsx,js,jsx}",
     "lints": "yarn lint && yarn stylelint",
     "lints:fix": "yarn lint:fix && yarn stylelint:fix",
-    "test": "jest --forceExit --detectOpenHandles --maxWorkers=1",
-    "test:coverage": "jest --coverage",
+    "test": "jest --forceExit --detectOpenHandles --maxWorkers=1 --passWithNoTests",
+    "test:coverage": "jest --coverage --passWithNoTests",
     "cypress:open": "cypress open",
     "build": "rimraf dist && tsc",
     "prepublishOnly": "yarn build"

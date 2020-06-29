@@ -18,6 +18,11 @@
     "test:coverage": "jest --coverage --passWithNoTests",
     "cypress:open": "cypress open",
     "build": "rimraf dist && tsc",
+    "version:prerelease": "yarn version --prerelease",
+    "version:patch": "yarn version --patch",
+    "version:minor": "yarn version --minor",
+    "version:major": "yarn version --major",
+    "preversion": "yarn lints && yarn test",
     "prepublishOnly": "yarn build"
   },
   "husky": {
